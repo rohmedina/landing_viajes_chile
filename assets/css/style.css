@@ -1,0 +1,53 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+
+:root{
+ --color-primary: ;
+ --color-secondary: ;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+.nav_container{
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ padding: 0 20px;
+ width: 100%;
+ height: 72px;
+ background-color: transparent;
+ z-index: 9;
+}
+
+nav a{
+ color: red;
+ text-decoration: none;
+ transition: 0.3s;
+}
+
+nav a.active{color: #8f44fd;}
+
+
+.section-uno{
+ height: 100vh;
+ background-color: #8f44fd;
+}
+
+.section-dos {
+ height: 100vh;
+ background-color: red;
+}
+
+.section-tres {
+ height: 100vh;
+ background-color: green;
+}
