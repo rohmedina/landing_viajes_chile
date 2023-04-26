@@ -26,7 +26,6 @@ window.addEventListener("scroll", function() {
   }
 });
 
-
 // aplica funcionalidad al tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
