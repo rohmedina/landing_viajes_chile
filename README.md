@@ -21,7 +21,7 @@ _Este proyecto está construido con JavaScript. Ésta y otras tecnologías se ha
 ## Instalacion de dependencias utilizadas en el proyecto 📁
 
 - Las dependencias se agregaron con CDN.
-  **Fontawesome**
+  **Fontawesome**,
   **Google Font**
 
 ## Autor ✒️
