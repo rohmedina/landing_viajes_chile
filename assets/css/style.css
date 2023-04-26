@@ -22,31 +22,24 @@ body{
  background-color: #000;
 }
 
+/* NAVBAR */
+.sticky-top{
+  position: fixed;
+  width: 100%;
+}
+
 .nav_container{
- position: fixed;
  top: 0;
  left: 0;
- display: flex;
- align-items: center;
- gap: 16px;
- padding: 0 20px;
- width: 100%;
- height: 72px;
  background-color: transparent;
- z-index: 9;
 }
 
-nav a{
- color: red;
- text-decoration: none;
- transition: 0.3s;
+.navbar-mod{
+  backdrop-filter: blur(10px) !important;
 }
 
-nav a.active{color: #8f44fd;}
-
-/* carousel */
-.carousel img{
- height: 90vh;
+.collapse.show .navbar-nav{
+  height: 100vh;
 }
 
 /* Section Quienes somos */
@@ -132,6 +125,11 @@ nav a.active{color: #8f44fd;}
   color: var(--color-primary);
 }
 
+.section-contact hr{
+  border: 1px solid gray;
+  margin: 20px 30px;
+}
+
 /* Footer */
 footer{
   background-color: var(--color-secondary);
@@ -149,6 +147,10 @@ footer p{
  }
 
 @media (min-width: 768px) {
+.carousel img {
+    height: 90vh;
+  }
+
 .contenedor-card {
 
   grid-template-columns: repeat(2, 1fr);

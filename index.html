@@ -25,11 +25,39 @@
 
 <body>
 
-  <nav class="nav_container">
+  <!-- <nav class="nav_container">
     <a data-scroll="home" class="active" href="#">Inicio</a>
-    <a data-scroll="qSomos" class="" href="#qSomos">Quienes somos</a>
-    <a data-scroll="desta" class="" href="#destacados">Destacados</a>
-    <a data-scroll="contact" class="" href="#">Contacto</a>
+
+
+  </nav> -->
+
+  <nav class="navbar nav_container sticky-top navbar-expand-lg navbar-dark ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Viajes Chile</a>
+      <button id="navButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll="qSomos" href="#qSomos">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll="desta" href="#destacados">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll="contact" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- Carousel -->
@@ -57,7 +85,7 @@
 
   <!-- Section Quienes Somos -->
   <section class="container section-qSomos mt-5" id="qSomos">
-    <h3 class="text-center my-5">¿quiénes somos?</h3>
+    <h3 class="text-center mb-5">¿quiénes somos?</h3>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="icono d-flex">
@@ -188,7 +216,7 @@
     crossorigin="anonymous"></script>
 
   <!-- JS Local -->
-
+  <script src="/assets/js/main.js"></script>
 
 
 </body>

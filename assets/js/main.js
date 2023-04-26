@@ -1,24 +1,27 @@
-const sections = document.querySelectorAll("section"), navLinks = document.querySelectorAll("nav a")
+var navbarButton = document.getElementById('navButton')
+var elemento = document.querySelector(".navbar")
 
 
-const resetLinks = () => navLinks.forEach(link => link.classList.remove("active"));
+navbarButton.addEventListener("click", function() {
+  if (navbarButton.classList.contains("collapsed")) {
+   elemento.style.backdropFilter = "none"
 
-const handleScroll = () =>{
- const {pageYOffset} = window;
- sections.forEach(section => {
-  const { id, offsetTop, clientHeight } = section;
-  const offset = offsetTop - 1;
+  } else {
+     elemento.style.right = "0"
+   elemento.style.position = "fixed"
+   elemento.style.backdropFilter = "blur(10px)"
+  }
+});
 
- if(
-  pageYOffset >= offset && pageYOffset < offset + clientHeight){
-   resetLinks();
-  navLinks.forEach(link => {
-   if(link.dataset.scroll === id){
-    link.classList.add("active");
-   }
-  });
- }
- });
-};
+window.addEventListener("scroll", function() {
+  var alturaPantalla = window.innerHeight;
+  var posicionElemento = elemento.offsetTop;
+  var posicionActual = window.pageYOffset;
+  var porcentaje = (posicionActual / alturaPantalla) * 100;
 
-document.addEventListener("scroll", handleScroll)
+  if (porcentaje >= 40) {
+    elemento.classList.add("navbar-mod");
+  } else {
+    elemento.classList.remove("navbar-mod");
+  }
+});
