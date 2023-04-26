@@ -14,6 +14,9 @@
 html{
  scroll-behavior: smooth;
 }
+body{
+ background-color: #000;
+}
 
 .nav_container{
  position: fixed;
@@ -56,6 +59,28 @@ nav a.active{color: #8f44fd;}
 }
 
 
+/* Section Destacados */
+
+.contenedor-card{
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ grid-template-rows: 1fr;
+}
+
+.card img{
+ height: 176px;
+ width: 100%;
+}
+
+.card .card-body{
+ background-color: #10CAF0;
+}
+
+.card .card-text{
+ color: #ffffff;
+}
+
+
 .section-dos {
  height: 100vh;
  background-color: red;
@@ -64,4 +89,29 @@ nav a.active{color: #8f44fd;}
 .section-tres {
  height: 100vh;
  background-color: green;
+}
+
+
+@media (min-width: 768px) {
+.contenedor-card {
+
+  grid-template-columns: repeat(2, 1fr);
+gap: 16px;
+ }
+}
+
+@media (min-width: 998px) {
+ .contenedor-card {
+
+  grid-template-columns: repeat(3, 1fr);
+
+ }
+}
+
+@media (min-width: 1140px) {
+ .contenedor-card {
+
+  grid-template-columns: repeat(4, 1fr);
+
+ }
 }
