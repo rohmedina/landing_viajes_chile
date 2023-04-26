@@ -12,6 +12,7 @@
 }
 h1,h2,h3,h4,h5,h6,p{
   color: var(--color-primary);
+  margin: 0;
 }
 
 html{
@@ -49,49 +50,68 @@ nav a.active{color: #8f44fd;}
 }
 
 /* Section Quienes somos */
-.section-uno{
-
+.section-qSomos h3{
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .section-qSomos .icono{
  background-color: var(--color-secondary);
  width: 100%;
  height: 30px;
- display: flex;
  justify-content: center;
  align-items: center;
 }
 
+.section-qSomos .fa-solid{
+  color: var(--color-primary);
+  font-size: 26px;
+}
+
 
 /* Section Destacados */
-
+.section-destacado h3{
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .contenedor-card{
  display: grid;
  grid-template-columns: repeat(1, 1fr);
  grid-template-rows: 1fr;
 }
 
+.card{
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
 .card img{
- height: 176px;
- width: 100%;
+  height: 176px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+}
+
+.card img:hover{
+  transform: scale(1.2);
 }
 
 .card .card-body{
  background-color: var(--color-secondary);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+.card .card-title{
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .card .card-text{
- color: #ffffff;
-}
-
-
-.section-dos {
- height: 100vh;
- background-color: red;
-}
-
-.section-tres {
- height: 100vh;
- background-color: green;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* Seccion Contacto */
@@ -123,12 +143,24 @@ footer p{
   font-weight: 400;
   font-size: 1em;
 }
+ footer .fa-brands{
+  color: var(--color-primary);
+  margin-right: 4px;
+ }
 
 @media (min-width: 768px) {
 .contenedor-card {
 
   grid-template-columns: repeat(2, 1fr);
 gap: 16px;
+ }
+
+footer p{
+  font-size: 26px;
+}
+ footer .fa-brands{
+  font-size: 26px;
+  margin-right: 10px;
  }
 }
 
