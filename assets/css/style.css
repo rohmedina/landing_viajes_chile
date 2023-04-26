@@ -7,8 +7,11 @@
 }
 
 :root{
- --color-primary: ;
- --color-secondary: ;
+ --color-primary: #fff;
+ --color-secondary: #10CAF0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  color: var(--color-primary);
 }
 
 html{
@@ -50,7 +53,7 @@ nav a.active{color: #8f44fd;}
 
 }
 .section-qSomos .icono{
- background-color: #10CAF0;
+ background-color: var(--color-secondary);
  width: 100%;
  height: 30px;
  display: flex;
@@ -73,7 +76,7 @@ nav a.active{color: #8f44fd;}
 }
 
 .card .card-body{
- background-color: #10CAF0;
+ background-color: var(--color-secondary);
 }
 
 .card .card-text{
@@ -91,6 +94,35 @@ nav a.active{color: #8f44fd;}
  background-color: green;
 }
 
+/* Seccion Contacto */
+.section-contact h5{
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-contact label{
+  color: var(--color-primary);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.section-contact .btn-contact{
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* Footer */
+footer{
+  background-color: var(--color-secondary);
+  height: 10vh;
+}
+footer p{
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+}
 
 @media (min-width: 768px) {
 .contenedor-card {
